@@ -31,6 +31,13 @@
 			remoteGlobalIDString = EA4A63521EC9676E00DBC57A;
 			remoteInfo = STYouTube;
 		};
+		EAB08C761EE7F0EC00DDB2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 502AE85F1A475FD500306AD1;
+			remoteInfo = YouTubePlayer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +54,7 @@
 		EA4A63721EC9676E00DBC57A /* STYouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STYouTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4A63761EC9676E00DBC57A /* STYouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STYouTubeUITests.swift; sourceTree = "<group>"; };
 		EA4A63781EC9676E00DBC57A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubePlayer.xcodeproj; path = YouTubePlayer/YouTubePlayer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		EA4A634A1EC9676E00DBC57A = {
 			isa = PBXGroup;
 			children = (
+				EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */,
 				EA4A63551EC9676E00DBC57A /* STYouTube */,
 				EA4A636A1EC9676E00DBC57A /* STYouTubeTests */,
 				EA4A63751EC9676E00DBC57A /* STYouTubeUITests */,
@@ -123,6 +132,14 @@
 				EA4A63781EC9676E00DBC57A /* Info.plist */,
 			);
 			path = STYouTubeUITests;
+			sourceTree = "<group>";
+		};
+		EAB08C731EE7F0EC00DDB2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +238,12 @@
 			mainGroup = EA4A634A1EC9676E00DBC57A;
 			productRefGroup = EA4A63541EC9676E00DBC57A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EAB08C731EE7F0EC00DDB2E7 /* Products */;
+					ProjectRef = EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EA4A63521EC9676E00DBC57A /* STYouTube */,
@@ -229,6 +252,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YouTubePlayer.framework;
+			remoteRef = EAB08C761EE7F0EC00DDB2E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EA4A63511EC9676E00DBC57A /* Resources */ = {
@@ -516,6 +549,7 @@
 				EA4A637D1EC9676E00DBC57A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA4A637E1EC9676E00DBC57A /* Build configuration list for PBXNativeTarget "STYouTubeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +558,7 @@
 				EA4A63801EC9676E00DBC57A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA4A63811EC9676E00DBC57A /* Build configuration list for PBXNativeTarget "STYouTubeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +567,7 @@
 				EA4A63831EC9676E00DBC57A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
