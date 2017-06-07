@@ -14,6 +14,8 @@
 		EA4A63611EC9676E00DBC57A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4A635F1EC9676E00DBC57A /* LaunchScreen.storyboard */; };
 		EA4A636C1EC9676E00DBC57A /* STYouTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A636B1EC9676E00DBC57A /* STYouTubeTests.swift */; };
 		EA4A63771EC9676E00DBC57A /* STYouTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A63761EC9676E00DBC57A /* STYouTubeUITests.swift */; };
+		EAB08C781EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */; };
+		EAB08C791EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,35 @@
 			remoteGlobalIDString = EA4A63521EC9676E00DBC57A;
 			remoteInfo = STYouTube;
 		};
+		EAB08C761EE7F0EC00DDB2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 502AE85F1A475FD500306AD1;
+			remoteInfo = YouTubePlayer;
+		};
+		EAB08C7A1EE7F3DD00DDB2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 502AE85E1A475FD500306AD1;
+			remoteInfo = YouTubePlayer;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAB08C7C1EE7F3DD00DDB2E7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EAB08C791EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EA4A63531EC9676E00DBC57A /* STYouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STYouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +77,7 @@
 		EA4A63721EC9676E00DBC57A /* STYouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STYouTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4A63761EC9676E00DBC57A /* STYouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STYouTubeUITests.swift; sourceTree = "<group>"; };
 		EA4A63781EC9676E00DBC57A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubePlayer.xcodeproj; path = YouTubePlayer/YouTubePlayer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB08C781EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +109,7 @@
 		EA4A634A1EC9676E00DBC57A = {
 			isa = PBXGroup;
 			children = (
+				EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */,
 				EA4A63551EC9676E00DBC57A /* STYouTube */,
 				EA4A636A1EC9676E00DBC57A /* STYouTubeTests */,
 				EA4A63751EC9676E00DBC57A /* STYouTubeUITests */,
@@ -125,6 +158,14 @@
 			path = STYouTubeUITests;
 			sourceTree = "<group>";
 		};
+		EAB08C731EE7F0EC00DDB2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +176,12 @@
 				EA4A634F1EC9676E00DBC57A /* Sources */,
 				EA4A63501EC9676E00DBC57A /* Frameworks */,
 				EA4A63511EC9676E00DBC57A /* Resources */,
+				EAB08C7C1EE7F3DD00DDB2E7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EAB08C7B1EE7F3DD00DDB2E7 /* PBXTargetDependency */,
 			);
 			name = STYouTube;
 			productName = STYouTube;
@@ -221,6 +264,12 @@
 			mainGroup = EA4A634A1EC9676E00DBC57A;
 			productRefGroup = EA4A63541EC9676E00DBC57A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EAB08C731EE7F0EC00DDB2E7 /* Products */;
+					ProjectRef = EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EA4A63521EC9676E00DBC57A /* STYouTube */,
@@ -229,6 +278,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YouTubePlayer.framework;
+			remoteRef = EAB08C761EE7F0EC00DDB2E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EA4A63511EC9676E00DBC57A /* Resources */ = {
@@ -295,6 +354,11 @@
 			isa = PBXTargetDependency;
 			target = EA4A63521EC9676E00DBC57A /* STYouTube */;
 			targetProxy = EA4A63731EC9676E00DBC57A /* PBXContainerItemProxy */;
+		};
+		EAB08C7B1EE7F3DD00DDB2E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouTubePlayer;
+			targetProxy = EAB08C7A1EE7F3DD00DDB2E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,6 +480,7 @@
 		EA4A637C1EC9676E00DBC57A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8A3KGY7724;
 				INFOPLIST_FILE = STYouTube/Info.plist;
@@ -429,6 +494,7 @@
 		EA4A637D1EC9676E00DBC57A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8A3KGY7724;
 				INFOPLIST_FILE = STYouTube/Info.plist;
@@ -516,6 +582,7 @@
 				EA4A637D1EC9676E00DBC57A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA4A637E1EC9676E00DBC57A /* Build configuration list for PBXNativeTarget "STYouTubeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +591,7 @@
 				EA4A63801EC9676E00DBC57A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA4A63811EC9676E00DBC57A /* Build configuration list for PBXNativeTarget "STYouTubeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +600,7 @@
 				EA4A63831EC9676E00DBC57A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
