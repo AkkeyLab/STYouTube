@@ -16,6 +16,8 @@
 		EA4A63771EC9676E00DBC57A /* STYouTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A63761EC9676E00DBC57A /* STYouTubeUITests.swift */; };
 		EAB08C781EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */; };
 		EAB08C791EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EACFD5821EFF60F40027C72F /* VideoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACFD5811EFF60F40027C72F /* VideoSelectViewController.swift */; };
+		EACFD5841EFF612D0027C72F /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACFD5831EFF612D0027C72F /* VideoPlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		EA4A63761EC9676E00DBC57A /* STYouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STYouTubeUITests.swift; sourceTree = "<group>"; };
 		EA4A63781EC9676E00DBC57A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubePlayer.xcodeproj; path = YouTubePlayer/YouTubePlayer.xcodeproj; sourceTree = "<group>"; };
+		EACFD5811EFF60F40027C72F /* VideoSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSelectViewController.swift; sourceTree = "<group>"; };
+		EACFD5831EFF612D0027C72F /* VideoPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 				EA4A635D1EC9676E00DBC57A /* Assets.xcassets */,
 				EA4A635F1EC9676E00DBC57A /* LaunchScreen.storyboard */,
 				EA4A63621EC9676E00DBC57A /* Info.plist */,
+				EACFD5811EFF60F40027C72F /* VideoSelectViewController.swift */,
+				EACFD5831EFF612D0027C72F /* VideoPlayViewController.swift */,
 			);
 			path = STYouTube;
 			sourceTree = "<group>";
@@ -321,7 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACFD5841EFF612D0027C72F /* VideoPlayViewController.swift in Sources */,
 				EA4A63591EC9676E00DBC57A /* ViewController.swift in Sources */,
+				EACFD5821EFF60F40027C72F /* VideoSelectViewController.swift in Sources */,
 				EA4A63571EC9676E00DBC57A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8A3KGY7724;
 				INFOPLIST_FILE = STYouTube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.STYouTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +507,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8A3KGY7724;
 				INFOPLIST_FILE = STYouTube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.STYouTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
