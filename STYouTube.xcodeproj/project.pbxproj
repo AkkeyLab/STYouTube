@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		EA4A63571EC9676E00DBC57A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A63561EC9676E00DBC57A /* AppDelegate.swift */; };
-		EA4A63591EC9676E00DBC57A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A63581EC9676E00DBC57A /* ViewController.swift */; };
 		EA4A635C1EC9676E00DBC57A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4A635A1EC9676E00DBC57A /* Main.storyboard */; };
 		EA4A635E1EC9676E00DBC57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4A635D1EC9676E00DBC57A /* Assets.xcassets */; };
 		EA4A63611EC9676E00DBC57A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4A635F1EC9676E00DBC57A /* LaunchScreen.storyboard */; };
 		EA4A636C1EC9676E00DBC57A /* STYouTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A636B1EC9676E00DBC57A /* STYouTubeTests.swift */; };
 		EA4A63771EC9676E00DBC57A /* STYouTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A63761EC9676E00DBC57A /* STYouTubeUITests.swift */; };
+		EA7FEA081F12080D009B19D5 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FEA051F12080D009B19D5 /* VideoPlayViewController.swift */; };
+		EA7FEA091F12080D009B19D5 /* VideoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FEA061F12080D009B19D5 /* VideoSelectViewController.swift */; };
+		EA7FEA0A1F12080D009B19D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FEA071F12080D009B19D5 /* ViewController.swift */; };
+		EA7FEA121F120B62009B19D5 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FEA111F120B62009B19D5 /* StoreViewController.swift */; };
 		EAB08C781EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */; };
 		EAB08C791EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -66,7 +69,6 @@
 /* Begin PBXFileReference section */
 		EA4A63531EC9676E00DBC57A /* STYouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STYouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4A63561EC9676E00DBC57A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA4A63581EC9676E00DBC57A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA4A635B1EC9676E00DBC57A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA4A635D1EC9676E00DBC57A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA4A63601EC9676E00DBC57A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,10 @@
 		EA4A63721EC9676E00DBC57A /* STYouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STYouTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4A63761EC9676E00DBC57A /* STYouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STYouTubeUITests.swift; sourceTree = "<group>"; };
 		EA4A63781EC9676E00DBC57A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7FEA051F12080D009B19D5 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPlayViewController.swift; path = ViewController/VideoPlayViewController.swift; sourceTree = "<group>"; };
+		EA7FEA061F12080D009B19D5 /* VideoSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSelectViewController.swift; path = ViewController/VideoSelectViewController.swift; sourceTree = "<group>"; };
+		EA7FEA071F12080D009B19D5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController/ViewController.swift; sourceTree = "<group>"; };
+		EA7FEA111F120B62009B19D5 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreViewController.swift; path = ViewController/StoreViewController.swift; sourceTree = "<group>"; };
 		EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubePlayer.xcodeproj; path = YouTubePlayer/YouTubePlayer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,12 +136,8 @@
 		EA4A63551EC9676E00DBC57A /* STYouTube */ = {
 			isa = PBXGroup;
 			children = (
-				EA4A63561EC9676E00DBC57A /* AppDelegate.swift */,
-				EA4A63581EC9676E00DBC57A /* ViewController.swift */,
-				EA4A635A1EC9676E00DBC57A /* Main.storyboard */,
-				EA4A635D1EC9676E00DBC57A /* Assets.xcassets */,
-				EA4A635F1EC9676E00DBC57A /* LaunchScreen.storyboard */,
-				EA4A63621EC9676E00DBC57A /* Info.plist */,
+				EA7FEA0F1F1208A8009B19D5 /* Resources */,
+				EA7FEA0E1F12087C009B19D5 /* Class */,
 			);
 			path = STYouTube;
 			sourceTree = "<group>";
@@ -156,6 +158,61 @@
 				EA4A63781EC9676E00DBC57A /* Info.plist */,
 			);
 			path = STYouTubeUITests;
+			sourceTree = "<group>";
+		};
+		EA7FEA0B1F120828009B19D5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA7FEA051F12080D009B19D5 /* VideoPlayViewController.swift */,
+				EA7FEA061F12080D009B19D5 /* VideoSelectViewController.swift */,
+				EA7FEA071F12080D009B19D5 /* ViewController.swift */,
+				EA7FEA111F120B62009B19D5 /* StoreViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EA7FEA0C1F120836009B19D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA4A635F1EC9676E00DBC57A /* LaunchScreen.storyboard */,
+				EA4A635A1EC9676E00DBC57A /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EA7FEA0D1F120842009B19D5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EA4A63561EC9676E00DBC57A /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		EA7FEA0E1F12087C009B19D5 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EA7FEA101F1209A9009B19D5 /* Model */,
+				EA7FEA0B1F120828009B19D5 /* ViewController */,
+				EA7FEA0C1F120836009B19D5 /* View */,
+				EA7FEA0D1F120842009B19D5 /* Delegate */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		EA7FEA0F1F1208A8009B19D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA4A635D1EC9676E00DBC57A /* Assets.xcassets */,
+				EA4A63621EC9676E00DBC57A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EA7FEA101F1209A9009B19D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		EAB08C731EE7F0EC00DDB2E7 /* Products */ = {
@@ -321,7 +378,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4A63591EC9676E00DBC57A /* ViewController.swift in Sources */,
+				EA7FEA121F120B62009B19D5 /* StoreViewController.swift in Sources */,
+				EA7FEA081F12080D009B19D5 /* VideoPlayViewController.swift in Sources */,
+				EA7FEA091F12080D009B19D5 /* VideoSelectViewController.swift in Sources */,
+				EA7FEA0A1F12080D009B19D5 /* ViewController.swift in Sources */,
 				EA4A63571EC9676E00DBC57A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,10 +544,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8A3KGY7724;
 				INFOPLIST_FILE = STYouTube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.STYouTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -498,10 +560,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8A3KGY7724;
 				INFOPLIST_FILE = STYouTube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.STYouTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
