@@ -16,6 +16,7 @@
 		EA7FEA081F12080D009B19D5 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FEA051F12080D009B19D5 /* VideoPlayViewController.swift */; };
 		EA7FEA091F12080D009B19D5 /* VideoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FEA061F12080D009B19D5 /* VideoSelectViewController.swift */; };
 		EA7FEA0A1F12080D009B19D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FEA071F12080D009B19D5 /* ViewController.swift */; };
+		EA7FEA121F120B62009B19D5 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FEA111F120B62009B19D5 /* StoreViewController.swift */; };
 		EAB08C781EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */; };
 		EAB08C791EE7F3DD00DDB2E7 /* YouTubePlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAB08C771EE7F0EC00DDB2E7 /* YouTubePlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		EA7FEA051F12080D009B19D5 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPlayViewController.swift; path = ViewController/VideoPlayViewController.swift; sourceTree = "<group>"; };
 		EA7FEA061F12080D009B19D5 /* VideoSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSelectViewController.swift; path = ViewController/VideoSelectViewController.swift; sourceTree = "<group>"; };
 		EA7FEA071F12080D009B19D5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController/ViewController.swift; sourceTree = "<group>"; };
+		EA7FEA111F120B62009B19D5 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreViewController.swift; path = ViewController/StoreViewController.swift; sourceTree = "<group>"; };
 		EAB08C721EE7F0EC00DDB2E7 /* YouTubePlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubePlayer.xcodeproj; path = YouTubePlayer/YouTubePlayer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 				EA7FEA051F12080D009B19D5 /* VideoPlayViewController.swift */,
 				EA7FEA061F12080D009B19D5 /* VideoSelectViewController.swift */,
 				EA7FEA071F12080D009B19D5 /* ViewController.swift */,
+				EA7FEA111F120B62009B19D5 /* StoreViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7FEA121F120B62009B19D5 /* StoreViewController.swift in Sources */,
 				EA7FEA081F12080D009B19D5 /* VideoPlayViewController.swift in Sources */,
 				EA7FEA091F12080D009B19D5 /* VideoSelectViewController.swift in Sources */,
 				EA7FEA0A1F12080D009B19D5 /* ViewController.swift in Sources */,

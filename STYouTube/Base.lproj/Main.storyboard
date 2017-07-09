@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="2015" y="827"/>
         </scene>
-        <!--View Controller-->
+        <!--Store View Controller-->
         <scene sceneID="sXs-Em-Nto">
             <objects>
-                <viewController id="M4N-pl-gnS" sceneMemberID="viewController">
+                <viewController id="M4N-pl-gnS" customClass="StoreViewController" customModule="STYouTube" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="alg-W9-o06"/>
                         <viewControllerLayoutGuide type="bottom" id="ZfF-zM-fRo"/>
