@@ -9,7 +9,7 @@
 import UIKit
 import UserNotifications
 
-class StoreViewController: UIViewController {
+class StoreViewController: UIViewController, UNUserNotificationCenterDelegate {
     var timer: Timer!
     var request: UNNotificationRequest!
 
@@ -18,6 +18,7 @@ class StoreViewController: UIViewController {
 
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound], completionHandler: { (granted, error) in })
+        center.delegate = self // userNotificationCenter が呼ばれるようにするため
         createNotification()
     }
 
@@ -29,7 +30,7 @@ class StoreViewController: UIViewController {
     }
 
     func createNotification() {
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
 
         let content = UNMutableNotificationContent()
         content.title = "セール実施中！"
@@ -37,6 +38,13 @@ class StoreViewController: UIViewController {
         content.sound = UNNotificationSound.default()
 
         request = UNNotificationRequest(identifier: "normal", content: content, trigger: trigger)
+    }
+
+    // アプリがフォアグラウンド時に呼ばれる
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound])
     }
 
     override func didReceiveMemoryWarning() {
